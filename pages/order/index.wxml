@@ -1,0 +1,8 @@
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+  <view
+  wx:for="{{tabs}}"
+  wx:key="id"
+  >
+    {{item.isActive?item.value:''}}
+  </view>
+</Tabs>
